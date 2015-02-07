@@ -30,6 +30,7 @@ index.config(function($routeProvider){
 			controller: 'DCController'
 		})
 
+
 	//**Quiz Page**
 		.when('/designPage', {
 			templateUrl: 'partials/quiz_design.html',
@@ -47,7 +48,9 @@ index.config(function($routeProvider){
 			templateUrl: 'partials/quiz_tester.html',
 			controller: 'InformaticsController'
 		})
-		
+		.when('/MarvelAnswers', {
+			templateUrl: 'partials/marvel_answers.html'
+		})
 
 		
 	//**404 Error**

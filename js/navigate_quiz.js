@@ -45,10 +45,7 @@ function numberForward()
 	}
 	barPercent();
   }
-  
-function numberBack()
-  {
-	document.getElementById(number).style.display = "none";
-	number -= 1;
-	document.getElementById(number).style.display = "block";
-  }
+function resetVariables(){
+	number = 1;
+	userAnswer = [];
+}
