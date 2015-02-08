@@ -5,18 +5,20 @@
 		<title>Comic Quest</title>
 		<!--bootstrap-->
 		<link rel= "stylesheet" href = "css/bootstrap.css"/>
+		<link rel= "stylesheet" href = "css/animate.css"/>
 		<!--scripts-->
 		<script src = "js/jquery.js"></script>
 		<script src = "lib/bootstrap.min.js"></script>
 		<script src = "lib/angular.min.js"></script>
 		<script src = "lib/angular-route.js"></script>
+		<script src = "lib/angular-animate.js"></script>
 		
 		<!--controller-->
 		<script src="js/main.js"></script>
 		<script src="js/navigate_quiz.js"></script>
 	</head>
 
-	<body style="background:url(img/bg.png) repeat;">
+	<body ng-app="index" style="background:url(img/bg.png) repeat;">
 	<div>
 	<!--navigation menu-->
 		<nav class ="navbar navbar-inverse">
@@ -28,7 +30,6 @@
 			</div>
 		</nav>
 		<!--show our different views using ng-view-->
-		<div ng-view>
-		</div>
+		<div ng-view></div>
 	</body>
 </html>

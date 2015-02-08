@@ -1,4 +1,4 @@
-var index = angular.module('index', ['ngRoute']);
+var index = angular.module('index', ['ngRoute', 'ngAnimate']);
 
 index.config(function($routeProvider){
 	$routeProvider.
