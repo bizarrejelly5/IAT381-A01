@@ -1,15 +1,41 @@
 /*Style*/
 .ng-enter { 
-  animation:scaleUp 0.5s both ease-in; }
-.ng-leave {
-  transform-origin: 0% 0%; 
-  animation: rotateFall 1s both ease-in; 
-}
-/*Animations*/
-@keyframes scaleUp {
-    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+	-webkit-animation: scale-webkit 0.5s both ease-in;
+	-moz-animation: scale-moz 0.5s both ease-in;
+	animation: scaleUp 0.5s both ease-in; 
 }
 
+.ng-leave {
+  transform-origin: 0% 0%; 
+  -webkit-animation: rotate-webkit 1s both ease-in; 
+  -moz-animation: rotate-moz 1s both ease-in;
+  animation: rotateFall 1s both ease-in;  
+}
+/*Animations*/
+@-webkit-keyframes scale-webkit {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+@-moz-keyframes scale-moz {
+    from    { opacity: 0.3; -moz-transform: scale(0.8); }
+}
+@keyframes scaleUp {
+    from    { opacity: 0.3; transform: scale(0.8); }
+}
+
+@keyframes rotate-webkit {
+    0%      { -webkit-transform: rotateZ(0deg); }
+    20%     { -webkit-transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { -webkit-transform: rotateZ(17deg); }
+    60%     { -webkit-transform: rotateZ(16deg); }
+    100%    { -webkit-transform: translateY(100%) rotateZ(17deg); }
+}
+@keyframes rotate-moz {
+    0%      { -moz-transform: rotateZ(0deg); }
+    20%     { -moz-transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { -moz-transform: rotateZ(17deg); }
+    60%     { -moz-transform: rotateZ(16deg); }
+    100%    { -moz-transform: translateY(100%) rotateZ(17deg); }
+}
 @keyframes rotateFall {
     0%      { transform: rotateZ(0deg); }
     20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
