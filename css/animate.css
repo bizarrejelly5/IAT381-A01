@@ -1,33 +1,18 @@
 /*Style*/
-/*.ng-enter { */
-/*	-webkit-animation: scale-webkit 0.5s both ease-in;*/
-/*	-moz-animation: scale-moz 0.5s both ease-in;*/
-/*	animation: scaleUp 0.5s both ease-in; */
-/*}*/
 .ng-enter { 
-	-webkit-animation: scale-webkit 0.5s;
-	-moz-animation: scale-moz 0.5s;
-	animation: scaleUp 0.5s; 
+	-webkit-animation: scale-webkit 0.5s both ease-in;
+	-moz-animation: scale-moz 0.5s both ease-in;
+	animation: scaleUp 0.5s both ease-in; 
 }
 
-/*.ng-leave {*/
-/*  -webkit-transform-origin: 0% 0%;*/
-/*  -moz-transform-origin: 0% 0%;*/
-/*  transform-origin: 0% 0%;*/
-/*  -webkit-animation: rotate-webkit 1s both ease-in; */
-/*  -moz-animation: rotate-moz 1s both ease-in;*/
-/*  animation: rotateFall 1s both ease-in;  */
-/*}*/
 .ng-leave {
   -webkit-transform-origin: 0% 0%;
   -moz-transform-origin: 0% 0%;
   transform-origin: 0% 0%;
-  -webkit-animation: rotate-webkit 0.7s;
-  -moz-animation: rotate-moz 0.7s;
-  animation: rotateFall 0.7s;  
+  -webkit-animation: rotate-webkit 0.7s both ease-in; 
+  -moz-animation: rotate-moz 0.7s both ease-in;
+  animation: rotateFall 0.7s both ease-in;  
 }
-
-
 
 /*Animations*/
 @-webkit-keyframes scale-webkit {
