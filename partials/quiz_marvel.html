@@ -1,152 +1,168 @@
-
-
-<div style="background-color:#red !important;" class="jumbotron">
-	<center><h1><span style="color:#CC0000;">Marvel Quiz</span></h1></center>
+<div class="well" style="background-color:rgba(205,0,0,0.9); !important">
+		<center><h1 style="color:#FFFFFF">MARVEL Quiz</h1></center>
 
 	<div id = "1" class="well">
-		<p class="text-center" style="color:#white !important"><em>Which movie was the first released for the Marvel Cinematic Universe?</em></p>
+		<h4 class="text-center"><em>Which movie was the first released for the Marvel Cinematic Universe?</em></h4>
+		
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q1" value="A" style="display:none;" onclick = "store(value); numberForward();"> The Incredible Hulk
+				<input type="radio" name="Q1" value="A" style="display:none;" onclick = "store(value); numberForward();">The Incredible Hulk</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q1" value="B" style="display:none;" onclick = "store(value); numberForward()"> Iron Man
+				<input type="radio" name="Q1" value="B" style="display:none;" onclick = "store(value); numberForward()">Iron Man</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q1" value="C" style="display:none;" onclick = "store(value); numberForward()"> Captain America
+				<input type="radio" name="Q1" value="C" style="display:none;" onclick = "store(value); numberForward()">Captain America</input>
 			</label>
+		
 	</div>
 
 	<div id = "2" class="well" style= "display:none">
-		<p class="text-center" style="color:#white !important"><em>What was being fought over in the Civil War?</em></p>
+		<h4 class="text-center"><em>What was being fought over in the Civil War?</em></h4>
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q2" value="A" style="display:none;" onclick = "store(value); numberForward()"> Superhero Registration
+				<input type="radio" name="Q2" value="A" style="display:none;" onclick = "store(value); numberForward()">Superhero Registration</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q2" value="B" style="display:none;" onclick = "store(value); numberForward()"> The Infinity Gems
+				<input type="radio" name="Q2" value="B" style="display:none;" onclick = "store(value); numberForward()">The Infinity Gems</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q2" value="C" style="display:none;" onclick = "store(value); numberForward()"> Control over America
+				<input type="radio" name="Q2" value="C" style="display:none;" onclick = "store(value); numberForward()">Control over America</input>
 			</label>
 	</div>
 
 	<div id = "3" class="well" style= "display:none">
-		<p class="text-center" style="color:#white !important"><em>Hugh Jackman has played Wolverine in how many movies?</em></p>
+		<h4 class="text-center"><em>Hugh Jackman has played Wolverine in how many movies?</em></h4>
+		&nbsp;
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q3" value="A" style="display:none;" onclick = "store(value); numberForward()"> Five
+				<input type="radio" name="Q3" value="A" style="display:none;" onclick = "store(value); numberForward()">Five</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q3" value="B" style="display:none;" onclick = "store(value); numberForward()"> Six
+				<input type="radio" name="Q3" value="B" style="display:none;" onclick = "store(value); numberForward()">Six</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q3" value="C" style="display:none;" onclick = "store(value); numberForward()"> Seven
+				<input type="radio" name="Q3" value="C" style="display:none;" onclick = "store(value); numberForward()">Seven</input>
 			</label>
+		&nbsp;
 	</div>
 
 	<div id = "4" class="well" style= "display:none">
-		<p class="text-center" style="color:#white !important"><em>In the series "Runaways", why did the kids run away from home?</em></p>
+		<h4 class="text-center"><em>In the series Runaways, why did the kids run away from home?</em></h4>
+		&nbsp;
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q4" value="A" style="display:none;" onclick = "store(value); numberForward()"> To join SHIELD
+				<input type="radio" name="Q4" value="A" style="display:none;" onclick = "store(value); numberForward()">To join SHIELD</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q4" value="B" style="display:none;" onclick = "store(value); numberForward()"> They committed a crime
+				<input type="radio" name="Q4" value="B" style="display:none;" onclick = "store(value); numberForward()">They committed a crime</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q4" value="C" style="display:none;" onclick = "store(value); numberForward()">  They found out their parents are villains
+				<input type="radio" name="Q4" value="C" style="display:none;" onclick = "store(value); numberForward()">They found out their parents are villains</input>
 			</label>
+		&nbsp;
 	</div>
 	
 	<div id = "5" class="well" style= "display:none">
-		<p class="text-center" style="color:#white !important"><em>Which is a real Marvel superhero?</em></p>
+		<h4 class="text-center"><em>Who is the only character to be a member of both the Justice League and the Avengers?</em></h4>
+		&nbsp;
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q5" value="A" style="display:none;" onclick = "store(value); numberForward()"> Atom-Eater Lad
+				<input type="radio" name="Q5" value="A" style="display:none;" onclick = "store(value); numberForward()">Iron Man</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q5" value="B" style="display:none;" onclick = "store(value); numberForward()"> Arm-Fall-Off-Boy 
+				<input type="radio" name="Q5" value="B" style="display:none;" onclick = "store(value); numberForward()">Hawkeye</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q5" value="C" style="display:none;" onclick = "store(value); numberForward()">  Morning Girl
+				<input type="radio" name="Q5" value="C" style="display:none;" onclick = "store(value); numberForward()">Black Widow</input>
 			</label>
+		&nbsp;
 	</div>
 
 	<div id = "6" class="well" style= "display:none">
-		<p class="text-center" style="color:#white !important"><em>The Hulk was originally what color?</em></p>
+		<h4 class="text-center"><em>The Hulk was originally what color?</em></h4>
+		&nbsp;
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q5" value="A" style="display:none;" onclick = "store(value); numberForward()"> Purple
+				<input type="radio" name="Q5" value="A" style="display:none;" onclick = "store(value); numberForward()">Purple</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q5" value="B" style="display:none;" onclick = "store(value); numberForward()"> Blue
+				<input type="radio" name="Q5" value="B" style="display:none;" onclick = "store(value); numberForward()">Blue</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q5" value="C" style="display:none;" onclick = "store(value); numberForward()">  Gray
+				<input type="radio" name="Q5" value="C" style="display:none;" onclick = "store(value); numberForward()">Grey</input>
 			</label>
+		&nbsp;
 	</div>
 
 	<div id = "7" class="well" style= "display:none">
-		<p class="text-center" style="color:#white !important"><em>What is the secret identity of Spider-Ham?</em></p>
+		<h4 class="text-center"><em>What is the secret identity of Spider-Ham?</em></h4>
+		&nbsp;
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q7" value="A" style="display:none;" onclick = "store(value); numberForward()"> Porker Parker
+				<input type="radio" name="Q7" value="A" style="display:none;" onclick = "store(value); numberForward()">Porker Parker</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q7" value="B" style="display:none;" onclick = "store(value); numberForward()"> Peter Porker
+				<input type="radio" name="Q7" value="B" style="display:none;" onclick = "store(value); numberForward()">Peter Porker</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q7" value="C" style="display:none;" onclick = "store(value); numberForward()">  Hamsome Jack
+				<input type="radio" name="Q7" value="C" style="display:none;" onclick = "store(value); numberForward()">Hamsome Jack</input>
 			</label>
+		&nbsp;
 	</div>
 
 	<div id = "8" class="well" style= "display:none">
-		<p class="text-center" style="color:#white !important"><em>In the 1610 universe, who killed Barack Obama?</em></p>
+		<h4 class="text-center"><em>In the 1610 universe, who killed Barack Obama?</em></h4>
+		&nbsp;
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q8" value="A" style="display:none;" onclick = "store(value); numberForward()"> A Brotherhood of Mutant Supremacy member
+				<input type="radio" name="Q8" value="A" style="display:none;" onclick = "store(value); numberForward()">A Member of the Brotherhood of Mutant Supremacy</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q8" value="B" style="display:none;" onclick = "store(value); numberForward()"> A Child of Tommorow
+				<input type="radio" name="Q8" value="B" style="display:none;" onclick = "store(value); numberForward()">A Child of Tommorow</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q8" value="C" style="display:none;" onclick = "store(value); numberForward()">  A super soldier
+				<input type="radio" name="Q8" value="C" style="display:none;" onclick = "store(value); numberForward()">A Super Soldier</input>
 			</label>
+		&nbsp;
 	</div>
 
 	<div id = "9" class="well" style= "display:none">
-		<p class="text-center" style="color:#white !important"><em>Who is Johnny Storm’s best friend?</em></p>
+		<h4 class="text-center"><em>Who is Johnny Storm’s best friend?</em></h4>
+		&nbsp;
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q9" value="A" style="display:none;" onclick = "store(value); numberForward()"> Bobby Drake
+				<input type="radio" name="Q9" value="A" style="display:none;" onclick = "store(value); numberForward()">Bobby Drake</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q9" value="B" style="display:none;" onclick = "store(value); numberForward()">  Ben Grimm
+				<input type="radio" name="Q9" value="B" style="display:none;" onclick = "store(value); numberForward()">Ben Grimm</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q9" value="C" style="display:none;" onclick = "store(value); numberForward()">  Peter Parker
+				<input type="radio" name="Q9" value="C" style="display:none;" onclick = "store(value); numberForward()">Peter Parker</input>
 			</label>
+		&nbsp;
 	</div>
 	
 	<div id = "10" class="well" style= "display:none">
-		<p class="text-center" style="color:#white !important"><em>What does SHIELD stand for?</em></p>
+		<h4 class="text-center"><em>What does SHIELD stand for?</em></h4>
+		&nbsp;
 			<label type="button" class="btn btn-default btn-block">
-				<input type="radio" name="Q10" value="A" style="display:none;" onclick = "store(value); numberForward()"> Super Human Intelligence Earth Local Defense
+				<input type="radio" name="Q10" value="A" style="display:none;" onclick = "store(value); numberForward()">Super Human Intelligence Earth Local Defense</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q10" value="B" style="display:none;" onclick = "store(value); numberForward()">  Systematic Hydra Interrogation Execution Database
+				<input type="radio" name="Q10" value="B" style="display:none;" onclick = "store(value); numberForward()">Systematic Hydra Interrogation Execution Database</input>
 			</label>
 			<label class="btn btn-default btn-block">
-				<input type="radio" name="Q10" value="C" style="display:none;" onclick = "store(value); numberForward()">  Strategic Hazard Intervention Espionage Logistics Directorate
+				<input type="radio" name="Q10" value="C" style="display:none;" onclick = "store(value); numberForward()">Strategic Hazard Intervention Espionage Logistics Directorate</input>
 			</label>
+		&nbsp;
 	</div>
 
 	<div id = "11" class="well" style= "display:none">
-		<p id = "results" class="text-center" style="color:#white !important"><em></em></p>
+		<h3 id = "results" class="text-center"><em></em></h3>
+		&nbsp;
 		<label type="button" class="btn btn-default btn-block">
-			<a href = "#/MarvelAnswers"><input style="display:none;" onclick = "resetVariables();">View Answers</a></input>
+			<a href = "#/MarvelAnswers" style="color:red !important"><input style="display:none;" onclick = "resetVariables();">View Answers</a></input>
 		</label>
 		<label type="button" class="btn btn-default btn-block">
-			<a href = "#/index"><input style="display:none;" onclick = "resetVariables();">Back To Quiz Selection</a></input>
+			<a href = "#/index" style="color:red !important"><input style="display:none;" onclick = "resetVariables();">Back To Quiz Selection</a></input>
 		</label>
+		&nbsp;
 	</div>
 
-
-<div class="progress">
-	<div id = "bar" class="progress-bar progress-bar-danger"" role="progressbar" aria-valuenow="{{barValue}}" aria-valuemin="0" aria-valuemax="100" >
+	<div class="progress">
+		<div id = "bar" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="{{barValue}}" aria-valuemin="0" aria-valuemax="100">
 	</div>
 </div>
 
-<p id = "test"></p>
