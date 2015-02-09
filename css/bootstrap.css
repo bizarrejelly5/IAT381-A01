@@ -939,7 +939,7 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
@@ -1390,8 +1390,8 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 @media (min-width: 768px) {
   .container {
@@ -2756,7 +2756,7 @@ select[multiple].form-group-lg .form-control {
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
-  white-space: nowrap;
+  white-space: normal;
   vertical-align: middle;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
@@ -4257,7 +4257,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
+  background-color: rgba(34,34,34, 0.9);
   border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
@@ -4785,10 +4785,10 @@ a.thumbnail.active {
 }
 .progress {
   height: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
   overflow: hidden;
   background-color: #f5f5f5;
-  border-radius: 4px;
+  border-radius: 5px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
 }
@@ -5061,12 +5061,12 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 5px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 .panel-body {
-  padding: 15px;
+  padding: 10px;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -5420,11 +5420,11 @@ a.list-group-item-danger.active:focus {
 }
 .well {
   min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
+  padding: 20px;
+  margin: 20px;
   background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
+  border: 0px solid #e3e3e3;
+  border-radius: 7px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
@@ -5433,8 +5433,10 @@ a.list-group-item-danger.active:focus {
   border-color: rgba(0, 0, 0, .15);
 }
 .well-lg {
-  padding: 24px;
-  border-radius: 6px;
+  padding: 25px;
+  margin: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }
 .well-sm {
   padding: 9px;

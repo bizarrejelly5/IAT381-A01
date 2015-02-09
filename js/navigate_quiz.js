@@ -2,17 +2,32 @@ var number = 1;
 var userAnswer = [];
 var checkMarvel = false;
 var marvelAnswer = ["B", "A", "C", "C", "B", "C", "B", "B", "A", "C"];
-document.getElementById("bar").style.width = number * 9.1 + "%";
+var checkDC = false;
+var dcAnswer = ["C", "A", "B", "C", "A", "A", "B", "C", "A", "C"];
+//document.getElementById("bar").style.width = number * 9.1 + "%";
 
+//checks if Marvel or DC is clicked to determine which answer key to use
 function MarvelTime(){
 	checkMarvel = true;
 }
+
+function DCTime(){
+	checkDC = true;
+}
+
 function checkAnswers(){
 	//check answer
 	var numCorrect = 0;
 	if(checkMarvel == true){
 		for(var i = 0; i < marvelAnswer.length; i++){
 			if(userAnswer[i] == marvelAnswer[i]){
+				numCorrect++;
+			}
+		}
+	}
+	else if(checkDC == true){
+		for(var i = 0; i < dcAnswer.length; i++){
+			if(userAnswer[i] == dcAnswer[i]){
 				numCorrect++;
 			}
 		}
@@ -28,7 +43,6 @@ function store(x){
 	//stores the user inputs into an array for checking later
 	var addtoArray = userAnswer.push();
 	userAnswer[number - 1] = x;
-	document.getElementById("test").innerHTML = userAnswer;
 }
 
 function numberForward()
@@ -48,4 +62,6 @@ function numberForward()
 function resetVariables(){
 	number = 1;
 	userAnswer = [];
+	checkMarvel = false;
+	checkDC = false;
 }

@@ -1,4 +1,4 @@
-var index = angular.module('index', ['ngRoute']);
+var index = angular.module('index', ['ngRoute', 'ngAnimate']);
 
 index.config(function($routeProvider){
 	$routeProvider.
@@ -11,14 +11,7 @@ index.config(function($routeProvider){
 		.when('/index',{
 			templateUrl: 'partials/index.html'
 		})
-		//studying Home page
-		.when('/studyPage',{
-			templateUrl: 'partials/study_home.html'
-		})
-		//quiz home page
-		.when('/quizPage',{
-			templateUrl: 'partials/quiz_home.html'
-		})
+
 		//Marvel home page
 		.when('/MarvelPage', {
 			templateUrl: 'partials/quiz_marvel.html',
@@ -26,33 +19,18 @@ index.config(function($routeProvider){
 		})
 		//DC home page
 		.when('/DCPage', {
-			templateUrl: 'partials/quiz_media.html',
+			templateUrl: 'partials/quiz_dc.html',
 			controller: 'DCController'
 		})
 
-
-	//**Quiz Page**
-		.when('/designPage', {
-			templateUrl: 'partials/quiz_design.html',
-			controller: 'DesignController'
-		})
-		.when('/mediaPage', {
-			templateUrl: 'partials/quiz_media.html',
-			controller: 'MediaController'
-		})
-		.when('/informaticsPage', {
-			templateUrl: 'partials/quiz_informatics.html',
-			controller: 'InformaticsController'
-		})
-		.when('/amyPage', {
-			templateUrl: 'partials/quiz_tester.html',
-			controller: 'InformaticsController'
-		})
+	//Quiz Page
 		.when('/MarvelAnswers', {
-			templateUrl: 'partials/marvel_answers.html'
+				templateUrl: "partials/marvel_answers.html"
+		})
+		.when('/DCAnswers', {
+				templateUrl: "partials/dc_answers.html"
 		})
 
-		
 	//**404 Error**
 		.otherwise({
 			redirectTo: '/'
@@ -60,27 +38,11 @@ index.config(function($routeProvider){
 });
 
 //**controller for the quiz**
-index.controller('DesignController', function($scope){
-	$scope.userInput = {};
-	$scope.answers = {};
-});
-
-index.controller('MediaController', function($scope){
-	$scope.userInput = {};
-	$scope.answers = {};
-});
-
-index.controller('InformaticsController', function($scope){
-	$scope.userInput = {};
-	$scope.answers = {};
-});
 index.controller('MarvelController', function($scope){
 	$scope.userInput = {};
 	$scope.answers = {};
 });
-
 index.controller('DCController', function($scope){
 	$scope.userInput = {};
 	$scope.answers = {};
 });
-
